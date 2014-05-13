@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513023325) do
+ActiveRecord::Schema.define(version: 20140513025336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20140513023325) do
     t.datetime "expires_on"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "magazine_id"
+    t.integer  "subscriber_id"
   end
 
 end
